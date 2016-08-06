@@ -1,9 +1,8 @@
 test:
   override:
     - pyenv versions
-    - pyenv shell 2.7.3
-    - pyenv rehash
-    - python --version
-    - python test/testall.py
+    - pyenv shell 2.7.3; python rehash; pytho --version; python test/testall.py
+   
+    - pyenv shell 2.7.6; python rehash; pytho --version; python test/testall.py
    
 
