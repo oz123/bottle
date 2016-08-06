@@ -1,8 +1,14 @@
+dependencies:
+  cache_directories:
+    - .pip-cache
+    - .pyenv
+
 test:
   override:
     - pyenv versions
-    - pyenv shell 2.7.3; pyenv rehash; python --version; python test/testall.py
-    - pyenv shell 2.7.3; pyenv rehash; python --version; python test/testall.py
+    - pyenv shell 2.7.3 
+    - eval "$(pyenv init -)"
+    - python --version; python test/testall.py
    
    
 
