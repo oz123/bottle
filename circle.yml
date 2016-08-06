@@ -1,0 +1,10 @@
+test:
+  override:
+    - pyenv global 2.7.9 
+    - python --version
+    - python tests/testall.py
+    - pyenv global 2.7.3 
+    - python --version
+    - python tests/testall.py
+   
+
